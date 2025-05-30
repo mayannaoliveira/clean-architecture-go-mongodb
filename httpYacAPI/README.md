@@ -17,6 +17,9 @@ A instalação é feita pela API.
 ```
 GET http://localhost:8000/ HTTP/1.1
 ```
+```
+GET http://localhost:8000/tasks HTTP/1.1
+```
 
 **Requisição POST:**
 ```

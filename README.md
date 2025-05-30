@@ -4,6 +4,7 @@
 [![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=Go&logoColor=white&link=https://go.dev/)](https://go.dev/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white&link=https://www.mongodb.com/)](https://www.mongodb.com/)
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white&link=https://www.docker.com/)](https://www.docker.com/)
+[![Gin Framework](https://img.shields.io/badge/Gin%20Framework-008ECF?style=flat&logo=gin&logoColor=white&link=https://gin-gonic.com/)](https://gin-gonic.com/)
 [![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=postman&logoColor=white&link=https://www.postman.com/)](https://www.postman.com/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white&link=https://github.com/mayannaoliveira)](https://github.com/mayannaoliveira)
 [![Studio3T](https://img.shields.io/badge/Studio%203T-17AF66?style=flat&logo=Studio3T&logoColor=white&link=https://studio3t.com/)](https://studio3t.com/)
