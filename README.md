@@ -92,7 +92,7 @@ Checar Docker version com comando `docker --version`.
  - Adicionar uma struct `Task` dentro do arquivo `task.go`.
  - Adicionar um método `CreateTask` dentro do arquivo `main.go`.
  - Inserir tratamento de exceção para verificar a conexão com o banco de dados.
- 
+ - Criar o router para POST `Createtask`.
 - Instalar a ferramenta [Studio 3T](https://studio3t.com/) para visualizar as conexões do MongoDB.
 
 [![Studio 3T](https://img.shields.io/badge/Studio%203T-17AF66?style=flat&logo=Studio3T&logoColor=white&link=https://studio3t.com/)](https://studio3t.com/)
@@ -121,7 +121,12 @@ Checar Docker version com comando `docker --version`.
 - Checar no Studio3T se os dados foram inseridos no MongoDB. Processo pode ser feito usando um JS `db.getCollection("tasks").find({})`.
 
 #### 8. Listando as tasks (Read do CRUD):
- 
+- Criar o bloco de `listTask` dentro do arquivo `main.go`.
+- Inserir tratamento de exceção para verificar a conexão com o banco de dados.
+- Inserir o router para `listTask`.
+- Fazer uma requisição GET `GET http://localhost:8000/tasks` para listar todas as taks.
+
+
 #### 9. Atualizando as tasks (Update do CRUD):
  
 #### 10. Deletando task (Delete do CRUD):

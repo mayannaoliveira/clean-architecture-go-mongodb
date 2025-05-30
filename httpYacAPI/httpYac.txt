@@ -1,0 +1,47 @@
+GET http://localhost:8000/ HTTP/1.1
+ 
+POST http://localhost:8000/tasks
+Content-Type: application/json
+
+{
+    "title": "Aladdin e Yasmin",
+    "description": "Filme da Disney",
+    "completed": true,
+    "created_at": "2022-02-15T19:50:00Z",
+    "due_date": "2022-03-01T00:00:00Z"
+}
+
+POST http://localhost:8000/tasks
+Content-Type: application/json
+
+{
+    "title": "Bela e a Fera",
+    "description": "Musical da Disney",
+    "completed": true,
+    "created_at": "2022-02-15T19:50:00Z",
+    "due_date": "2022-03-01T00:00:00Z"
+}
+
+POST http://localhost:8000/tasks
+Content-Type: application/json
+
+{
+    "title": "Bob Esponja",
+    "description": "Desenho muito famoso",
+    "completed": true,
+    "created_at": "2022-02-15T19:50:00Z",
+    "due_date": "2022-03-01T00:00:00Z"
+}
+
+POST http://localhost:8000/tasks
+Content-Type: application/json
+
+{
+    "title": "The Shawshank Redemption",
+    "description": "Story of hope and friendship in prison",
+    "completed": true,
+    "created_at": "2022-01-18T20:15:00Z",
+    "due_date": "2022-02-01T00:00:00Z"
+  }
+  
+GET http://localhost:8000/tasks HTTP/1.1
