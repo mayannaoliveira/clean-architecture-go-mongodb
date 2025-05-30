@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "3b162c98-fc58-480d-bfcc-cd243bd079ba",
+		"name": "Curso Go",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17473500",
+		"_collection_link": "https://time22-0719.postman.co/workspace/go-crud-api~d3d0cb9c-0a22-4db2-95ac-5734ff2748f1/collection/17473500-3b162c98-fc58-480d-bfcc-cd243bd079ba?action=share&source=collection_link&creator=17473500"
+	},
+	"item": [
+		{
+			"name": "listar localhost",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}",
+					"host": [
+						"{{localhost}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "criar tarefas",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"inserindo dados\",\r\n    \"description\":\"Exemplo de dados\",\r\n    \"completed\":true,\r\n    \"created_at\":\"2022-03-18T14:10:00Z\",\r\n    \"duo_date\":\"2022-03-18T14:10:00Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/task",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"task"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listar tarefas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/task",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"task"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
