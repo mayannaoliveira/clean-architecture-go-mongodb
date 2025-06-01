@@ -19,7 +19,10 @@ jobs:
 
       - name: Change to project directory
         run: cd go-crud-api
-
+      
+      - name: Run application
+        run: go run main.go
+        
       - name: Build
         run: go build -v ./...
 
