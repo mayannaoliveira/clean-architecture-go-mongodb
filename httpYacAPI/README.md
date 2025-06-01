@@ -11,21 +11,17 @@ A instalação é feita pela API.
 
 ![httpyac](https://httpyac.github.io/favicon.png)
 
-### Exemplos
+### Utilizando o httpYac no Projeto
 
 **Requisição GET:**
-```
-GET http://localhost:8000/ HTTP/1.1
-```
-```
-GET http://localhost:8000/tasks HTTP/1.1
-```
+- Para verificar localhost: `GET http://localhost:8000/ HTTP/1.1`
+- Para listar todas as tasks: `GET http://localhost:8000/tasks HTTP/1.1`
 
 **Requisição POST:**
-```
+
 POST http://localhost:8000/tasks
 Content-Type: application/json
-
+```json
 {
     "title": "Bela e a Fera",
     "description": "Musical da Disney",
@@ -34,7 +30,17 @@ Content-Type: application/json
     "due_date": "2022-03-01T00:00:00Z"
 }
 ```
-**Requisição DELETE:**
-```
+**Requisição PUT:**
+PUT http://localhost:8000/tasks/683c791192fc3e05efe1869d
+```json
+Content-Type: application/json
+    {
+        "id": "683c791192fc3e05efe1869d",
+        "title": "Street Figther",
+        "description": "Jogo do Nitendo",
+        "completed": true,
+        "due_date": "0001-01-01T00:00:00Z",
+        "created_at": "2025-06-01T16:00:17.773Z"
+    }
 ```
  

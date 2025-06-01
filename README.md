@@ -62,6 +62,8 @@ Checar Docker version com comando `docker --version`.
 
 [![Docker Docs](https://img.shields.io/badge/Docker%20Docs-2496ED?style=flat&logo=Docker&logoColor=white&link=https://docs.docker.com/?_gl=1*bu2mvx*_gcl_au*NTA5ODMyMTIzLjE3NDgxMTAyNTE.*_ga*Mjk3NzcxNTE5LjE3NDgxMTAyNTE.*_ga_XJWPQMJYHQ*czE3NDg1NzA3ODUkbzIkZzEkdDE3NDg1NzA3OTAkajU1JGwwJGgw)](https://docs.docker.com/?_gl=1*bu2mvx*_gcl_au*NTA5ODMyMTIzLjE3NDgxMTAyNTE.*_ga*Mjk3NzcxNTE5LjE3NDgxMTAyNTE.*_ga_XJWPQMJYHQ*czE3NDg1NzA3ODUkbzIkZzEkdDE3NDg1NzA3OTAkajU1JGwwJGgw)
 
+> A execução do projeto depende da criação do conteiner e que ele esteja executando.
+
 ### Seção 2: Desenvolvimento de API REST em Go
 
 #### 4. Introdução ao módulo: 
@@ -79,6 +81,8 @@ Checar Docker version com comando `docker --version`.
 
 [![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=postman&logoColor=white&link=https://www.postman.com/)](https://www.postman.com/)
 [![Postman](https://img.shields.io/badge/API%20do%20Curso%20Postman-FF6C37?style=flat&logo=postman&logoColor=white&link=https://www.postman.com/)](https://www.postman.com/)
+
+> As resquisições e o ambiente de teste foram salvos na pasta [Postman](\postman) para utilizar faça o `import` no Postman.
 
 #### 6. Adicionando o banco de dados:
 
@@ -98,11 +102,12 @@ Checar Docker version com comando `docker --version`.
 
 [![Studio 3T](https://img.shields.io/badge/Studio%203T-17AF66?style=flat&logo=Studio3T&logoColor=white&link=https://studio3t.com/)](https://studio3t.com/)
 
-    - Para criar a conexão no Studio 3T bastas clicar em `Conect`.
-    - Inserir a url `mongodb://localhost:27017` para estabelecer a conexão local.
+- Para criar a conexão no Studio 3T bastas clicar em `Conect`.
+- Inserir a url `mongodb://localhost:27017` para estabelecer a conexão local.
 
 - Instalar o Postman para teste da API.
-- Abrir o Postman e criar um novo worspace e requisiçao `POST` para testar `tasks` `http://localhost:8000/task`.
+- No Postman é nescessário criar um novo worspace. 
+- Adicione uma requisiçao `POST` para testar `tasks` `POST: http://localhost:8000/task`.
 - Insira o JSON dentro do `Body > raw`:
 ```json
 {
@@ -113,7 +118,7 @@ Checar Docker version com comando `docker --version`.
     "duo_date":"2022-03-18T14:10:00Z"
 }
 ```
-- Verifique se retornou o id:
+- Verifique se retornou o id similiar a esse:
 ```json
 {
     "id": "683a043f3b9c9b864c7a67a4"
@@ -124,11 +129,32 @@ Checar Docker version com comando `docker --version`.
 #### 8. Listando as tasks (Read do CRUD):
 - Criar o bloco de `listTask` dentro do arquivo `main.go`.
 - Inserir tratamento de exceção para verificar a conexão com o banco de dados.
-- Inserir o router para `listTask`.
-- Fazer uma requisição GET `GET http://localhost:8000/tasks` para listar todas as taks.
+- Inserir o router para `listTask`. 
+- No Postman teste utilizando uma requisição `GET: http://localhost:8000/tasks` para listar todas as tasks.
+- Verificar se retorna a lista de tasks adicionadas.
 
 
 #### 9. Atualizando as tasks (Update do CRUD):
+- Implementar o código com a função 
+- Criar uma request no Postman `PUT `
+- Inserir o `Body > Raw > JSON`:
+```json
+    {
+        "id": "<<ID>>",
+        "title": "<<TÍTULO>>",
+        "description": "<<DESCRIÇÃO>>",
+        "completed": <<TRUE/FALSE>>,
+        "due_date": "<<DATETIME>>",
+        "created_at": "<<DATETIME>>"
+    }
+```
+- Verificar se API foi atualizada rodando a API `GET: http://localhost:8000/tasks`
+- A API retorna mensagem de sucesso:
+```json
+{
+    "message": "Task atualizada com sucesso"
+}
+```
  
 #### 10. Deletando task (Delete do CRUD):
  
