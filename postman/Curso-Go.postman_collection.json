@@ -22,6 +22,23 @@
 			"response": []
 		},
 		{
+			"name": "listar tarefas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/tasks",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "criar tarefas",
 			"request": {
 				"auth": {
@@ -51,24 +68,7 @@
 			"response": []
 		},
 		{
-			"name": "listar tarefas",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{localhost}}/tasks",
-					"host": [
-						"{{localhost}}"
-					],
-					"path": [
-						"tasks"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "atualizar tarefas",
+			"name": "atualizar tarefa",
 			"event": [
 				{
 					"listen": "test",
@@ -120,6 +120,82 @@
 			],
 			"request": {
 				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": \"683c791192fc3e05efe1869d\",\r\n        \"title\": \"Street Figther\",\r\n        \"description\": \"Jogo do Nitendo\",\r\n        \"completed\": true,\r\n        \"due_date\": \"0001-01-01T00:00:00Z\",\r\n        \"created_at\": \"2025-06-01T16:00:17.773Z\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{localhost}}/tasks/683c791192fc3e05efe1869d",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"tasks",
+						"683c791192fc3e05efe1869d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "apagar tarefa",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var template = `\r",
+							"<style type=\"text/css\">\r",
+							"    .tftable {font-size:14px;color:#333333;width:100%;border-width: 1px;border-color: #87ceeb;border-collapse: collapse;}\r",
+							"    .tftable th {font-size:18px;background-color:#87ceeb;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;text-align:left;}\r",
+							"    .tftable tr {background-color:#ffffff;}\r",
+							"    .tftable td {font-size:14px;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;}\r",
+							"    .tftable tr:hover {background-color:#e0ffff;}\r",
+							"</style>\r",
+							"\r",
+							"<table class=\"tftable\" border=\"1\">\r",
+							"    <tr>\r",
+							"        <th>Status</th>\r",
+							"        <th>Content-Type</th>\r",
+							"        <th>Response</th>\r",
+							"    </tr>\r",
+							"    <tr>\r",
+							"        <td>404</td>\r",
+							"        <td>text/plain</td>\r",
+							"        <td>0</td>\r",
+							"    </tr>\r",
+							"</table>\r",
+							"`;\r",
+							"\r",
+							"function constructVisualizerPayload() {\r",
+							"    return {response: pm.response.text()}\r",
+							"}\r",
+							"\r",
+							"pm.visualizer.set(template, constructVisualizerPayload());"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
 				"header": [],
 				"body": {
 					"mode": "raw",

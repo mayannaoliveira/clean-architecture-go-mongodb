@@ -98,17 +98,45 @@ func updateTask(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{"message": "Task atualizada com sucesso"})
 }
 
+// Apagar task
+func deleteTask(c *gin.Context) {
+	idParam := c.Param("id")
+	objID, err := primitive.ObjectIDFromHex(idParam)
+
+	if err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "ID Inválido"})
+		return
+	}
+
+	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+	defer cancel()
+	result, err := collection.DeleteOne(ctx, bson.M{"_id": objID})
+
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+		return
+	}
+
+	if result.DeletedCount == 0 {
+		c.JSON(http.StatusNotFound, gin.H{"error": "Task não encontrada"})
+		return
+	}
+	c.JSON(http.StatusOK, gin.H{"message": "Task deletada com sucesso"})
+}
+
+// Função main
 func main() {
 	connectDB()
 	router := gin.Default()
-
+	// Mensagem de retorno da api
 	router.GET("/", func(c *gin.Context) {
 		c.JSON(200, gin.H{"message": "Olá, Mundo!"})
 	})
 	// Routers
-	router.GET("/tasks", listTask)       // Router para listar tasks
-	router.POST("/task", createTask)     // Router para criar tasks
-	router.PUT("/tasks/:id", updateTask) // Router para atualizar tasks
+	router.GET("/tasks", listTask)         // Router para listar tasks
+	router.POST("/task", createTask)       // Router para criar tasks
+	router.PUT("/tasks/:id", updateTask)   // Router para atualizar tasks
+	router.DELETE("tasks/:id", deleteTask) // Router para apagar tasks
 
 	router.Run(":8000") //Rodando na localhost:8000
 }

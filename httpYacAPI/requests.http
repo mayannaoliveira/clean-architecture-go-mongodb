@@ -56,3 +56,5 @@ Content-Type: application/json
         "due_date": "0001-01-01T00:00:00Z",
         "created_at": "2025-06-01T16:00:17.773Z"
     }
+
+DELETE http://localhost:8000/tasks/683c867105786c610ce02ba7

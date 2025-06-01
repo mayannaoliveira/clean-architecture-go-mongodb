@@ -155,9 +155,23 @@ Checar Docker version com comando `docker --version`.
     "message": "Task atualizada com sucesso"
 }
 ```
+- Verificar no Studio3T se os dados foram atualizados do MongoDB. 
+- Processo pode ser feito usando um JS `db.getCollection("tasks").find({})`.
+
  
 #### 10. Deletando task (Delete do CRUD):
- 
+- Inserir em `main.go` a função para apagar a task.
+- Inserir o router de apagar task.
+- No Postman criar um requet `DELETE: http://localhost:8000/task/<<ID>>` para deletar a task.
+- Verificar se a task foi apagada e se API retornou a mensagem de sucesso:
+```json
+{
+    "message": "Task deletada com sucesso"
+}   
+```
+- Verificar no Studio3T se os dados foram deletados do MongoDB. 
+- Processo pode ser feito usando um JS `db.getCollection("tasks").find({})`.
+
 #### 11. Adicionando Swagger na aplicação:
  
 #### 12. Validando CRUD com Frontend:
