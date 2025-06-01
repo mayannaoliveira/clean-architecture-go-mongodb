@@ -168,7 +168,7 @@ Checar Docker version com comando `docker --version`.
     - `go get -u github.com/swaggo/files`.
     - `go install github.com/swaggo/swag/cmd/swag@latest`.
 - Fazer o import dos pacotes dentro do `main.go`.
-````go
+```go
     "go-crud-api-docs" 
 	ginSwagger "github.com/swaggo/gin-swagger"
 	swaggerFiles "github.com/swaggo/files"
@@ -240,7 +240,6 @@ Checar Docker version com comando `docker --version`.
 
 #### 12. Validando CRUD com Frontend:
 
-
 ### Seção 1: Introdução ao curso e configuração de ambiente
 
 #### 13. Introdução a Clean Architecture
@@ -270,7 +269,9 @@ Checar Docker version com comando `docker --version`.
 #### 25. Validando projeto com Frontend
 
 
+
 ---
+
 
 ##### Contribuidores:
 
