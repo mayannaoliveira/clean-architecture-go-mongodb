@@ -1,3 +1,4 @@
+// Importação dos pacotes
 package main
 
 import (
@@ -5,6 +6,11 @@ import (
 	"go-crud-api/models"
 	"net/http"
 	"time"
+
+	_"go-crud-api/docs"
+
+	swaggerFiles "github.com/swaggo/files"
+	ginSwagger "github.com/swaggo/gin-swagger"
 
 	"github.com/gin-gonic/gin"
 	"go.mongodb.org/mongo-driver/bson"
@@ -24,14 +30,23 @@ func connectDB() {
 	collection = client.Database("taskdb").Collection("tasks")
 }
 
-// Criando task
+// @Summary      Criando nova task
+// @Description  Cria uma nova task no banco de dados.
+// @Tags         tasks
+// @Accept       json
+// @Produce      json
+// @Param        task  body      models.Task  true  "Dados da Tarefa"
+// @Success      201   {object}  map[string]interface{}
+// @Failure      400   {object}  map[string]string
+// @Failure      500   {object}  map[string]string
+// @Router       /task [post]
 func createTask(c *gin.Context) {
 	var task models.Task // chamada do models > task
 	if err := c.ShouldBindJSON(&task); err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
 	}
-	// Lógica para criar task
+
 	task.CreatedAt = time.Now()
 	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
 	defer cancel()
@@ -45,7 +60,14 @@ func createTask(c *gin.Context) {
 	c.JSON(http.StatusCreated, gin.H{"id": result.InsertedID})
 }
 
-// Listando task
+// @Summary      Listar tasks
+// @Description  Lista todas as tasks no banco de dados.
+// @Tags         tasks
+// @Accept       json
+// @Produce      json
+// @Success      200   {array}   models.Task
+// @Failure      500   {object}  map[string]string
+// @Router       /tasks [get]
 func listTask(c *gin.Context) {
 	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
 	defer cancel()
@@ -68,7 +90,18 @@ func listTask(c *gin.Context) {
 
 }
 
-// Atualizando task
+// @Summary      Atualizando a task
+// @Description  Atualiza uma task no banco de dados.
+// @Tags         tasks
+// @Accept       json
+// @Produce      json
+// @Param        id    path      string      true  "ID da tarefa"
+// @Param        task  body      models.Task true  "Dados da Tarefa"
+// @Success      200   {object}  map[string]string
+// @Failure      400   {object}  map[string]string
+// @Failure      404   {object}  map[string]string
+// @Failure      500   {object}  map[string]string
+// @Router       /tasks/{id} [put]
 func updateTask(c *gin.Context) {
 	idParam := c.Param("id")
 	objID, err := primitive.ObjectIDFromHex(idParam)
@@ -98,7 +131,17 @@ func updateTask(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{"message": "Task atualizada com sucesso"})
 }
 
-// Apagar task
+// @Summary      Apagar a task
+// @Description  Apaga uma task no banco de dados.
+// @Tags         tasks
+// @Accept       json
+// @Produce      json
+// @Param        id    path      string      true  "ID da tarefa"
+// @Success      200   {object}  map[string]string
+// @Failure      400   {object}  map[string]string
+// @Failure      404   {object}  map[string]string
+// @Failure      500   {object}  map[string]string
+// @Router       /tasks/{id} [delete]		{delete}
 func deleteTask(c *gin.Context) {
 	idParam := c.Param("id")
 	objID, err := primitive.ObjectIDFromHex(idParam)
@@ -124,10 +167,16 @@ func deleteTask(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{"message": "Task deletada com sucesso"})
 }
 
-// Função main
+// @Title			Task API
+// @Version			1.0
+// @Description		API para gerenciamento de tarefas com MongoDB.
+// @Host			localhost:8000
+// @Basepath		/
 func main() {
 	connectDB()
 	router := gin.Default()
+	// Endpoint do swagger
+	router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
 	// Mensagem de retorno da api
 	router.GET("/", func(c *gin.Context) {
 		c.JSON(200, gin.H{"message": "Olá, Mundo!"})

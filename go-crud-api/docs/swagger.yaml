@@ -1,0 +1,170 @@
+basePath: /
+definitions:
+  models.Task:
+    properties:
+      completed:
+        type: boolean
+      created_at:
+        type: string
+      description:
+        type: string
+      due_date:
+        type: string
+      id:
+        type: string
+      title:
+        type: string
+    type: object
+host: localhost:8000
+info:
+  contact: {}
+  description: API para gerenciamento de tarefas com MongoDB.
+  title: Task API
+  version: "1.0"
+paths:
+  /task:
+    post:
+      consumes:
+      - application/json
+      description: Cria uma nova task no banco de dados.
+      parameters:
+      - description: Dados da Tarefa
+        in: body
+        name: task
+        required: true
+        schema:
+          $ref: '#/definitions/models.Task'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            additionalProperties: true
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Criando nova task
+      tags:
+      - tasks
+  /tasks:
+    get:
+      consumes:
+      - application/json
+      description: Lista todas as tasks no banco de dados.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/models.Task'
+            type: array
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Listar tasks
+      tags:
+      - tasks
+  /tasks/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Apaga uma task no banco de dados.
+      parameters:
+      - description: ID da tarefa
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Apagar a task
+      tags:
+      - tasks
+    put:
+      consumes:
+      - application/json
+      description: Atualiza uma task no banco de dados.
+      parameters:
+      - description: ID da tarefa
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Dados da Tarefa
+        in: body
+        name: task
+        required: true
+        schema:
+          $ref: '#/definitions/models.Task'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Atualizando a task
+      tags:
+      - tasks
+swagger: "2.0"

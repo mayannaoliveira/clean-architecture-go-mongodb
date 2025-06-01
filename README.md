@@ -1,13 +1,6 @@
 
 
-[![Udemy](https://img.shields.io/badge/Udemy-A435F0?style=flat&logo=udemy&logoColor=white&link=https://www.udemy.com/course/clean-architecture-na-pratica-com-golang/)](https://www.udemy.com/course/clean-architecture-na-pratica-com-golang/)
-[![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=Go&logoColor=white&link=https://go.dev/)](https://go.dev/)
-[![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white&link=https://www.mongodb.com/)](https://www.mongodb.com/)
-[![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white&link=https://www.docker.com/)](https://www.docker.com/)
-[![Gin Framework](https://img.shields.io/badge/Gin%20Framework-008ECF?style=flat&logo=gin&logoColor=white&link=https://gin-gonic.com/)](https://gin-gonic.com/)
-[![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=postman&logoColor=white&link=https://www.postman.com/)](https://www.postman.com/)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white&link=https://github.com/mayannaoliveira)](https://github.com/mayannaoliveira)
-[![Studio3T](https://img.shields.io/badge/Studio%203T-17AF66?style=flat&logo=Studio3T&logoColor=white&link=https://studio3t.com/)](https://studio3t.com/)
+[![Udemy](https://img.shields.io/badge/Udemy-A435F0?style=flat&logo=udemy&logoColor=white&link=https://www.udemy.com/course/clean-architecture-na-pratica-com-golang/)](https://www.udemy.com/course/clean-architecture-na-pratica-com-golang/) ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=nextdotjs&logoColor=white) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-663399?style=flat&logo=CSS&logoColor=white) [![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=Go&logoColor=white&link=https://go.dev/)](https://go.dev/) [![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white&link=https://www.mongodb.com/)](https://www.mongodb.com/) [![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white&link=https://www.docker.com/)](https://www.docker.com/) [![Gin Framework](https://img.shields.io/badge/Gin%20Framework-008ECF?style=flat&logo=gin&logoColor=white&link=https://gin-gonic.com/)](https://gin-gonic.com/) [![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=postman&logoColor=white&link=https://www.postman.com/)](https://www.postman.com/) [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white&link=https://github.com/mayannaoliveira)](https://github.com/mayannaoliveira) [![Studio3T](https://img.shields.io/badge/Studio%203T-17AF66?style=flat&logo=Studio3T&logoColor=white&link=https://studio3t.com/)](https://studio3t.com/)
 [![VSCodium](https://img.shields.io/badge/VSCodium-2F80ED?style=flat&logo=vscodium&logoColor=white&link=https://vscodium.com/)](https://vscodium.com/)
 
 ## Clean Architecture na prática: Go, MongoDB e Docker
@@ -42,7 +35,7 @@ Projetinho feito durante o curso [Clean Architecture na prática: Go, MongoDB e 
 
 ### 2. IDE
 
-- Instalar a extenção da go.dev [Go - Go Team at Google](https://marketplace.visualstudio.com/items?itemName=golang.go).
+- Instalar a extenção do Go ![Go Team at Google](https://img.shields.io/badge/Go%20Team%20at%20Google-2F80ED?style=flat&logo=vscodium&logoColor=white) e [![Docker Microsoft](https://img.shields.io/badge/Docker%20Microsoft-2F80ED?style=flat&logo=vscodium&logoColor=white&link=https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker).
 - Adicionar em `Arquivo > Preferências > Configurações` as configuração no VS Code:
 ```json
 {
@@ -53,14 +46,9 @@ Projetinho feito durante o curso [Clean Architecture na prática: Go, MongoDB e 
 ```
 - Sempre uso a extensão [Docker da Microsoft](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) para facilitar a visualização dos conteiners.
 
-![Go Team at Google](https://img.shields.io/badge/Go%20Team%20at%20Google-2F80ED?style=flat&logo=vscodium&logoColor=white)
-[![Docker Microsoft](https://img.shields.io/badge/Docker%20Microsoft-2F80ED?style=flat&logo=vscodium&logoColor=white&link=https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
-
 ### 3. Docker
-- Instalação do Docker.
+- Instalação do [![Docker ](https://img.shields.io/badge/Docker%20Docs-2496ED?style=flat&logo=Docker&logoColor=white&link=https://docs.docker.com/?_gl=1*bu2mvx*_gcl_au*NTA5ODMyMTIzLjE3NDgxMTAyNTE.*_ga*Mjk3NzcxNTE5LjE3NDgxMTAyNTE.*_ga_XJWPQMJYHQ*czE3NDg1NzA3ODUkbzIkZzEkdDE3NDg1NzA3OTAkajU1JGwwJGgw)](https://docs.docker.com/).
 Checar Docker version com comando `docker --version`.
-
-[![Docker Docs](https://img.shields.io/badge/Docker%20Docs-2496ED?style=flat&logo=Docker&logoColor=white&link=https://docs.docker.com/?_gl=1*bu2mvx*_gcl_au*NTA5ODMyMTIzLjE3NDgxMTAyNTE.*_ga*Mjk3NzcxNTE5LjE3NDgxMTAyNTE.*_ga_XJWPQMJYHQ*czE3NDg1NzA3ODUkbzIkZzEkdDE3NDg1NzA3OTAkajU1JGwwJGgw)](https://docs.docker.com/?_gl=1*bu2mvx*_gcl_au*NTA5ODMyMTIzLjE3NDgxMTAyNTE.*_ga*Mjk3NzcxNTE5LjE3NDgxMTAyNTE.*_ga_XJWPQMJYHQ*czE3NDg1NzA3ODUkbzIkZzEkdDE3NDg1NzA3OTAkajU1JGwwJGgw)
 
 > A execução do projeto depende da criação do conteiner e que ele esteja executando.
 
@@ -79,8 +67,9 @@ Checar Docker version com comando `docker --version`.
 - Caso o Framework Gin não esteja instalado use o comando `go get -u github.com/gin-gonic/gin`.
 - Execute o comando `go run main.go` para verficar `Olá,Mundo!` na página localhost.
 
-[![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=postman&logoColor=white&link=https://www.postman.com/)](https://www.postman.com/)
-[![Postman](https://img.shields.io/badge/API%20do%20Curso%20Postman-FF6C37?style=flat&logo=postman&logoColor=white&link=https://www.postman.com/)](https://www.postman.com/)
+**Projeto no Postman:**
+- Baixe e instale o [![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=postman&logoColor=white&link=https://www.postman.com/)](https://www.postman.com/).
+- Importe a coleção e ambiente [![Postman](https://img.shields.io/badge/API%20do%20Curso%20Postman-FF6C37?style=flat&logo=postman&logoColor=white&link=https://www.postman.com/)](https://www.postman.com/) para sua workspace no Postman.
 
 > As resquisições e o ambiente de teste foram salvos na pasta [Postman](\postman) para utilizar faça o `import` no Postman.
 
@@ -90,6 +79,7 @@ Checar Docker version com comando `docker --version`.
 - Crie um conteiner Docker com o comando `docker run -d -p 27017:27017 --name mongodb mongo:4`.
 - Verifique com `docker ps` se a instalação foi realizada.
 - Baixar pacotes para o projeto: `go mod tidy`.
+- Verificar se foi gerado o arquivo `go.mod` em `go-crud-api\go.mod`.
 - Continuar a parte do código para criar uma task.
 
 #### 7. Criando uma Task (Create do CRUD)
@@ -98,13 +88,9 @@ Checar Docker version com comando `docker --version`.
  - Adicionar um método `CreateTask` dentro do arquivo `main.go`.
  - Inserir tratamento de exceção para verificar a conexão com o banco de dados.
  - Criar o router para POST `Createtask`.
-- Instalar a ferramenta [Studio 3T](https://studio3t.com/) para visualizar as conexões do MongoDB.
-
-[![Studio 3T](https://img.shields.io/badge/Studio%203T-17AF66?style=flat&logo=Studio3T&logoColor=white&link=https://studio3t.com/)](https://studio3t.com/)
-
+- Instalar a ferramenta [![Studio 3T](https://img.shields.io/badge/Studio%203T-17AF66?style=flat&logo=Studio3T&logoColor=white&link=https://studio3t.com/)](https://studio3t.com/) para visualizar as conexões do MongoDB.
 - Para criar a conexão no Studio 3T bastas clicar em `Conect`.
 - Inserir a url `mongodb://localhost:27017` para estabelecer a conexão local.
-
 - Instalar o Postman para teste da API.
 - No Postman é nescessário criar um novo worspace. 
 - Adicione uma requisiçao `POST` para testar `tasks` `POST: http://localhost:8000/task`.
@@ -171,9 +157,87 @@ Checar Docker version com comando `docker --version`.
 ```
 - Verificar no Studio3T se os dados foram deletados do MongoDB. 
 - Processo pode ser feito usando um JS `db.getCollection("tasks").find({})`.
+- Após a finalização do CRUD popule  Tasks com os JS [populando-tasks.js](/go-crud-api/populando-tasks.js) ou [inserir-task.js](/go-crud-api/inserir-task.js). 
+- Basta inserir os dados no MongoDB e checar com comando `db.getCollection("tasks").find({})` ou `db.tasks.find().pretty()`.
 
 #### 11. Adicionando Swagger na aplicação:
- 
+- Essa parte é para documentar a API é feita através da instalação de pacotes.
+- Acesse o terminal na pasta do projeto `cd go-crud-api`.
+- Instale os pacotes via terminal: 
+    - `go get -u github.com/swaggo/gin-swagger`.
+    - `go get -u github.com/swaggo/files`.
+    - `go install github.com/swaggo/swag/cmd/swag@latest`.
+- Fazer o import dos pacotes dentro do `main.go`.
+````go
+    "go-crud-api-docs" 
+	ginSwagger "github.com/swaggo/gin-swagger"
+	swaggerFiles "github.com/swaggo/files"
+```
+- Adiciona novo endpoint.
+- Criar uma pasta `docs` em `go-crud-api/docs`.
+- Inserir a documentação em cada função criada em `main.go`
+	- `func createTask` inserir:
+	```go
+	// @Summary      Criando nova task
+	// @Description  Cria uma nova task no banco de dados.
+	// @Tags         tasks
+	// @Accept       json
+	// @Produce      json
+	// @Param        task  body      models.Task  true  "Dados da Tarefa"
+	// @Success      201   {object}  map[string]interface{}
+	// @Failure      400   {object}  map[string]string
+	// @Failure      500   {object}  map[string]string
+	// @Router       /task [post]
+	```
+	
+	- `func listTask` inserir:
+	```go
+	// @Summary      Listar tasks
+	// @Description  Lista todas as tasks no banco de dados.
+	// @Tags         tasks
+	// @Accept       json
+	// @Produce      json
+	// @Success      200   {array}   models.Task
+	// @Failure      500   {object}  map[string]string
+	// @Router       /tasks [get]
+	```
+	
+	- `func updateTask` inserir:
+	```go
+	// @Summary      Atualizando a task
+	// @Description  Atualiza uma task no banco de dados.
+	// @Tags         tasks
+	// @Accept       json
+	// @Produce      json
+	// @Param        id    path      string      true  "ID da tarefa"
+	// @Param        task  body      models.Task true  "Dados da Tarefa"
+	// @Success      200   {object}  map[string]string
+	// @Failure      400   {object}  map[string]string
+	// @Failure      404   {object}  map[string]string
+	// @Failure      500   {object}  map[string]string
+	// @Router       /tasks/{id} [put]
+	```
+	- `func deleteTask` inserir:
+	```go
+	// @Summary      Apagar a task
+	// @Description  Apaga uma task no banco de dados.
+	// @Tags         tasks
+	// @Accept       json
+	// @Produce      json
+	// @Param        id    path      string      true  "ID da tarefa"
+	// @Success      200   {object}  map[string]string
+	// @Failure      400   {object}  map[string]string
+	// @Failure      404   {object}  map[string]string
+	// @Failure      500   {object}  map[string]string
+	// @Router       /tasks/{id}     [delete] {delete}
+	```
+	
+- No terminal execute `swag --version` para checar a versão.
+- Execute `swag init` para gerar todos os arquivos necessários a partir dos comentários da documentação.
+- Verifique se foram criados os arquivos `docs.go`, `swagger.json`, `swagger.yaml` em `go-crud-api\docs`.
+- Abrir no navegador o localhost `http://localhost:8000/swagger/index.html`.
+- Agora temos a visualização dos Swaggers.
+
 #### 12. Validando CRUD com Frontend:
 
 
@@ -219,6 +283,4 @@ Checar Docker version com comando `docker --version`.
 </table>
 
 _Caso queira usar o repositório leia [Contribuidores](/contributors.md) antes de fazer o fork. Repositório criado somente para estudar Go e MongoDB_
-
-
-
+ 
