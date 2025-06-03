@@ -22,8 +22,7 @@ Projetinho feito durante o curso [Clean Architecture na prática: Go, MongoDB e 
   * [1. Configuração do ambiente](#1-configura--o-do-ambiente)
   * [2. IDE](#2-ide)
   * [3. Docker](#3-docker)
-  * [Seção 2: Desenvolvimento de API REST em Go](#se--o-2--desenvolvimento-de-api-rest-em-go)
-  * [4. Introdução ao módulo](#4-introduçãoo-ao-módulo)
+  * [4. Introdução ao módulo](#4-introdução-ao-módulo)
   * [5. Criando API](#5-criando-api)
   * [6. Adicionando o banco de dados](#6-adicionando-o-banco-de-dados)
   * [7. Criando uma Task](#7-criando-uma-task)
@@ -78,8 +77,6 @@ Checar Docker version com comando `docker --version`.
 
 >[!note]
 >A execução do projeto depende da criação do conteiner e que ele esteja executando.
-
-### Seção 2: Desenvolvimento de API REST em Go
 
 #### 4. Introdução ao módulo
 
