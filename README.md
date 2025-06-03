@@ -68,7 +68,8 @@ Projetinho feito durante o curso [Clean Architecture na prática: Go, MongoDB e 
 - Instalação do [![Docker ](https://img.shields.io/badge/Docker%20Docs-2496ED?style=flat&logo=Docker&logoColor=white&link=https://docs.docker.com/?_gl=1*bu2mvx*_gcl_au*NTA5ODMyMTIzLjE3NDgxMTAyNTE.*_ga*Mjk3NzcxNTE5LjE3NDgxMTAyNTE.*_ga_XJWPQMJYHQ*czE3NDg1NzA3ODUkbzIkZzEkdDE3NDg1NzA3OTAkajU1JGwwJGgw)](https://docs.docker.com/).
 Checar Docker version com comando `docker --version`.
 
-> [!note] A execução do projeto depende da criação do conteiner e que ele esteja executando.
+> [!note] 
+> A execução do projeto depende da criação do conteiner e que ele esteja executando.
 
 ### Seção 2: Desenvolvimento de API REST em Go
 
@@ -89,7 +90,8 @@ Checar Docker version com comando `docker --version`.
 - Baixe e instale o [![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=postman&logoColor=white&link=https://www.postman.com/)](https://www.postman.com/).
 - Importe a coleção e ambiente [![Postman](https://img.shields.io/badge/API%20do%20Curso%20Postman-FF6C37?style=flat&logo=postman&logoColor=white&link=https://www.postman.com/)](https://www.postman.com/) para sua workspace no Postman.
 
->[!note] As resquisições e o ambiente de teste foram salvos na pasta [Postman](\postman) para utilizar faça o `import` no Postman.
+>[!note] 
+> As resquisições e o ambiente de teste foram salvos na pasta [Postman](\postman) para utilizar faça o `import` no Postman.
 
 #### 6. Adicionando o banco de dados:
 
