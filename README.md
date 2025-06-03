@@ -8,7 +8,7 @@
 <!-- ![CSS](https://img.shields.io/badge/CSS-663399?style=flat&logo=CSS&logoColor=white) -->
 <!-- ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white) -->
 
-## Clean Architecture na prática: Go, MongoDB e Docker
+## API Go e MongoDB
 
 Projetinho feito durante o curso [Clean Architecture na prática: Go, MongoDB e Docker
 ](https://www.udemy.com/course/clean-architecture-na-pratica-com-golang/) na [Udemy](https://www.udemy.com/). O intuito desse repositório é de estudar Go e MongoDB.
