@@ -1,7 +1,12 @@
 
 
-[![Udemy](https://img.shields.io/badge/Udemy-A435F0?style=flat&logo=udemy&logoColor=white&link=https://www.udemy.com/course/clean-architecture-na-pratica-com-golang/)](https://www.udemy.com/course/clean-architecture-na-pratica-com-golang/) ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=nextdotjs&logoColor=white) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-663399?style=flat&logo=CSS&logoColor=white) [![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=Go&logoColor=white&link=https://go.dev/)](https://go.dev/) [![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white&link=https://www.mongodb.com/)](https://www.mongodb.com/) [![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white&link=https://www.docker.com/)](https://www.docker.com/) [![Gin Framework](https://img.shields.io/badge/Gin%20Framework-008ECF?style=flat&logo=gin&logoColor=white&link=https://gin-gonic.com/)](https://gin-gonic.com/) [![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=postman&logoColor=white&link=https://www.postman.com/)](https://www.postman.com/) [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white&link=https://github.com/mayannaoliveira)](https://github.com/mayannaoliveira) [![Studio3T](https://img.shields.io/badge/Studio%203T-17AF66?style=flat&logo=Studio3T&logoColor=white&link=https://studio3t.com/)](https://studio3t.com/)
+[![Udemy](https://img.shields.io/badge/Udemy-A435F0?style=flat&logo=udemy&logoColor=white&link=https://www.udemy.com/course/clean-architecture-na-pratica-com-golang/)](https://www.udemy.com/course/clean-architecture-na-pratica-com-golang/) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=nextdotjs&logoColor=white) [![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=Go&logoColor=white&link=https://go.dev/)](https://go.dev/) [![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white&link=https://www.mongodb.com/)](https://www.mongodb.com/) [![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white&link=https://www.docker.com/)](https://www.docker.com/) [![Gin Framework](https://img.shields.io/badge/Gin%20Framework-008ECF?style=flat&logo=gin&logoColor=white&link=https://gin-gonic.com/)](https://gin-gonic.com/) [![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=postman&logoColor=white&link=https://www.postman.com/)](https://www.postman.com/) [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white&link=https://github.com/mayannaoliveira)](https://github.com/mayannaoliveira) [![Studio3T](https://img.shields.io/badge/Studio%203T-17AF66?style=flat&logo=Studio3T&logoColor=white&link=https://studio3t.com/)](https://studio3t.com/)
 [![VSCodium](https://img.shields.io/badge/VSCodium-2F80ED?style=flat&logo=vscodium&logoColor=white&link=https://vscodium.com/)](https://vscodium.com/)
+
+<!-- Frontend -->
+<!-- ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) -->
+<!-- ![CSS](https://img.shields.io/badge/CSS-663399?style=flat&logo=CSS&logoColor=white) -->
+<!-- ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white) -->
 
 ## Clean Architecture na prática: Go, MongoDB e Docker
 
@@ -11,7 +16,8 @@ Projetinho feito durante o curso [Clean Architecture na prática: Go, MongoDB e 
 >[!important] Repositório criado somente para estudar a Criação de uma API com Go e MongoDB.
 
 <!-- TOC https://ecotrust-canada.github.io/markdown-toc/ -->
-**Conteúdo: **
+**Conteúdo:**
+
   * [1. Configuração do ambiente](#1-configura--o-do-ambiente)
   * [2. IDE](#2-ide)
   * [3. Docker](#3-docker)
