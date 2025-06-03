@@ -8,6 +8,24 @@
 Projetinho feito durante o curso [Clean Architecture na prática: Go, MongoDB e Docker
 ](https://www.udemy.com/course/clean-architecture-na-pratica-com-golang/) na [Udemy](https://www.udemy.com/). O intuito desse repositório é de estudar Go e MongoDB.
 
+>[!important] Repositório criado somente para estudar a Criação de uma API com Go e MongoDB.
+
+<!-- TOC https://ecotrust-canada.github.io/markdown-toc/ -->
+**Conteúdo: **
+  * [1. Configuração do ambiente](#1-configura--o-do-ambiente)
+  * [2. IDE](#2-ide)
+  * [3. Docker](#3-docker)
+  * [Seção 2: Desenvolvimento de API REST em Go](#se--o-2--desenvolvimento-de-api-rest-em-go)
+    + [4. Introdução ao módulo:](#4-introdu--o-ao-m-dulo-)
+    + [5. Criando API:](#5-criando-api-)
+    + [6. Adicionando o banco de dados:](#6-adicionando-o-banco-de-dados-)
+    + [7. Criando uma Task (Create do CRUD)](#7-criando-uma-task--create-do-crud-)
+    + [8. Listando as tasks (Read do CRUD):](#8-listando-as-tasks--read-do-crud--)
+    + [9. Atualizando as tasks (Update do CRUD):](#9-atualizando-as-tasks--update-do-crud--)
+    + [10. Deletando task (Delete do CRUD):](#10-deletando-task--delete-do-crud--)
+    + [11. Adicionando Swagger na aplicação:](#11-adicionando-swagger-na-aplica--o-)
+- [Contribuidores:](#contribuidores)
+
 ### 1. Configuração do ambiente
 
 - Instalação do Go.
@@ -50,7 +68,7 @@ Projetinho feito durante o curso [Clean Architecture na prática: Go, MongoDB e 
 - Instalação do [![Docker ](https://img.shields.io/badge/Docker%20Docs-2496ED?style=flat&logo=Docker&logoColor=white&link=https://docs.docker.com/?_gl=1*bu2mvx*_gcl_au*NTA5ODMyMTIzLjE3NDgxMTAyNTE.*_ga*Mjk3NzcxNTE5LjE3NDgxMTAyNTE.*_ga_XJWPQMJYHQ*czE3NDg1NzA3ODUkbzIkZzEkdDE3NDg1NzA3OTAkajU1JGwwJGgw)](https://docs.docker.com/).
 Checar Docker version com comando `docker --version`.
 
-> A execução do projeto depende da criação do conteiner e que ele esteja executando.
+> [!note] A execução do projeto depende da criação do conteiner e que ele esteja executando.
 
 ### Seção 2: Desenvolvimento de API REST em Go
 
@@ -71,7 +89,7 @@ Checar Docker version com comando `docker --version`.
 - Baixe e instale o [![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=postman&logoColor=white&link=https://www.postman.com/)](https://www.postman.com/).
 - Importe a coleção e ambiente [![Postman](https://img.shields.io/badge/API%20do%20Curso%20Postman-FF6C37?style=flat&logo=postman&logoColor=white&link=https://www.postman.com/)](https://www.postman.com/) para sua workspace no Postman.
 
-> As resquisições e o ambiente de teste foram salvos na pasta [Postman](\postman) para utilizar faça o `import` no Postman.
+>[!note] As resquisições e o ambiente de teste foram salvos na pasta [Postman](\postman) para utilizar faça o `import` no Postman.
 
 #### 6. Adicionando o banco de dados:
 
@@ -119,7 +137,6 @@ Checar Docker version com comando `docker --version`.
 - No Postman teste utilizando uma requisição `GET: http://localhost:8000/tasks` para listar todas as tasks.
 - Verificar se retorna a lista de tasks adicionadas.
 
-
 #### 9. Atualizando as tasks (Update do CRUD):
 - Implementar o código com a função 
 - Criar uma request no Postman `PUT `
@@ -144,7 +161,6 @@ Checar Docker version com comando `docker --version`.
 - Verificar no Studio3T se os dados foram atualizados do MongoDB. 
 - Processo pode ser feito usando um JS `db.getCollection("tasks").find({})`.
 
- 
 #### 10. Deletando task (Delete do CRUD):
 - Inserir em `main.go` a função para apagar a task.
 - Inserir o router de apagar task.
@@ -238,40 +254,7 @@ Checar Docker version com comando `docker --version`.
 - Abrir no navegador o localhost `http://localhost:8000/swagger/index.html`.
 - Agora temos a visualização dos Swaggers.
 
-#### 12. Validando CRUD com Frontend:
-
-### Seção 1: Introdução ao curso e configuração de ambiente
-
-#### 13. Introdução a Clean Architecture
- 
-#### 14. Conhecendo a Clean Architecture
-
-#### 15. Refatorando o projeto para Clean Architecture
- 
-#### 16. Entidades
-
-#### 17. Criando a repository
- 
-#### 18. Repository
- 
-#### 19. Criando a useCase
-
-#### 20. UseCase
-
-#### 21. Criando a handler
-
-#### 22. Handler
-
-#### 23. Configurando IoC
-
-#### 24. Testando API - RestClient
-
-#### 25. Validando projeto com Frontend
-
-
-
 ---
-
 
 ##### Contribuidores:
 
@@ -283,5 +266,5 @@ Checar Docker version com comando `docker --version`.
   </tbody>
 </table>
 
-_Caso queira usar o repositório leia [Contribuidores](/contributors.md) antes de fazer o fork. Repositório criado somente para estudar Go e MongoDB_
+_Caso queira usar o repositório leia [Contribuidores](/contributors.md) antes de fazer o fork._
  
