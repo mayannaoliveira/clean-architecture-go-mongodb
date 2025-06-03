@@ -13,7 +13,8 @@
 Projetinho feito durante o curso [Clean Architecture na prática: Go, MongoDB e Docker
 ](https://www.udemy.com/course/clean-architecture-na-pratica-com-golang/) na [Udemy](https://www.udemy.com/). O intuito desse repositório é de estudar Go e MongoDB.
 
->[!important] Repositório criado somente para estudar a Criação de uma API com Go e MongoDB.
+>[!important]
+>Repositório criado somente para estudar a Criação de uma API com Go e MongoDB.
 
 <!-- TOC https://ecotrust-canada.github.io/markdown-toc/ -->
 **Conteúdo:**
@@ -22,15 +23,15 @@ Projetinho feito durante o curso [Clean Architecture na prática: Go, MongoDB e 
   * [2. IDE](#2-ide)
   * [3. Docker](#3-docker)
   * [Seção 2: Desenvolvimento de API REST em Go](#se--o-2--desenvolvimento-de-api-rest-em-go)
-    + [4. Introdução ao módulo:](#4-introdu--o-ao-m-dulo-)
-    + [5. Criando API:](#5-criando-api-)
-    + [6. Adicionando o banco de dados:](#6-adicionando-o-banco-de-dados-)
-    + [7. Criando uma Task (Create do CRUD)](#7-criando-uma-task--create-do-crud-)
-    + [8. Listando as tasks (Read do CRUD):](#8-listando-as-tasks--read-do-crud--)
-    + [9. Atualizando as tasks (Update do CRUD):](#9-atualizando-as-tasks--update-do-crud--)
-    + [10. Deletando task (Delete do CRUD):](#10-deletando-task--delete-do-crud--)
-    + [11. Adicionando Swagger na aplicação:](#11-adicionando-swagger-na-aplica--o-)
-- [Contribuidores:](#contribuidores)
+  * [4. Introdução ao módulo](#4-introduçãoo-ao-módulo)
+  * [5. Criando API](#5-criando-api)
+  * [6. Adicionando o banco de dados](#6-adicionando-o-banco-de-dados)
+  * [7. Criando uma Task](#7-criando-uma-task)
+  * [8. Listando as tasks](#8-listando-as-tasks)
+  * [9. Atualizando as tasks](#9-atualizando-as-tasks)
+  * [10. Deletando task](#10-deletando-task)
+  * [11. Adicionando Swagger na aplicação](#11-adicionando-swagger-na-aplica--o)
+- [Contribuidores](#contribuidores)
 
 ### 1. Configuração do ambiente
 
@@ -71,19 +72,22 @@ Projetinho feito durante o curso [Clean Architecture na prática: Go, MongoDB e 
 - Sempre uso a extensão [Docker da Microsoft](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) para facilitar a visualização dos conteiners.
 
 ### 3. Docker
+
 - Instalação do [![Docker ](https://img.shields.io/badge/Docker%20Docs-2496ED?style=flat&logo=Docker&logoColor=white&link=https://docs.docker.com/?_gl=1*bu2mvx*_gcl_au*NTA5ODMyMTIzLjE3NDgxMTAyNTE.*_ga*Mjk3NzcxNTE5LjE3NDgxMTAyNTE.*_ga_XJWPQMJYHQ*czE3NDg1NzA3ODUkbzIkZzEkdDE3NDg1NzA3OTAkajU1JGwwJGgw)](https://docs.docker.com/).
 Checar Docker version com comando `docker --version`.
 
-> [!note] 
-> A execução do projeto depende da criação do conteiner e que ele esteja executando.
+>[!note]
+>A execução do projeto depende da criação do conteiner e que ele esteja executando.
 
 ### Seção 2: Desenvolvimento de API REST em Go
 
-#### 4. Introdução ao módulo: 
+#### 4. Introdução ao módulo
+
 - Teste executado com old_main.go com o comando `go run old_main.go`.
 - Verificar se no localhost `http://localhost:8000/` é possível visualizar a mensagem `Olá Mundo!`.
 
-#### 5. Criando API: 
+#### 5. Criando API
+
 - Crie um novo arquivo `main.go` e adicione o código e execute no terminal `go run main`.
 - Criar um servidor HTTP com a rota `/` que retorna a mensagem `Olá Mundo!`:
 - Executea o comando `go run main.go`.
@@ -97,9 +101,9 @@ Checar Docker version com comando `docker --version`.
 - Importe a coleção e ambiente [![Postman](https://img.shields.io/badge/API%20do%20Curso%20Postman-FF6C37?style=flat&logo=postman&logoColor=white&link=https://www.postman.com/)](https://www.postman.com/) para sua workspace no Postman.
 
 >[!note] 
-> As resquisições e o ambiente de teste foram salvos na pasta [Postman](\postman) para utilizar faça o `import` no Postman.
+>As resquisições e o ambiente de teste foram salvos na pasta [Postman](\postman) para utilizar faça o `import` no Postman.
 
-#### 6. Adicionando o banco de dados:
+#### 6. Adicionando o banco de dados
 
 - Verifique se o Docker está em execução.
 - Crie um conteiner Docker com o comando `docker run -d -p 27017:27017 --name mongodb mongo:4`.
@@ -108,7 +112,8 @@ Checar Docker version com comando `docker --version`.
 - Verificar se foi gerado o arquivo `go.mod` em `go-crud-api\go.mod`.
 - Continuar a parte do código para criar uma task.
 
-#### 7. Criando uma Task (Create do CRUD)
+#### 7. Criando uma Task
+
  - Criar novo repositório `models` e adicionar o arquivo `task.go`.
  - Adicionar uma struct `Task` dentro do arquivo `task.go`.
  - Adicionar um método `CreateTask` dentro do arquivo `main.go`.
@@ -138,14 +143,16 @@ Checar Docker version com comando `docker --version`.
 ```
 - Checar no Studio3T se os dados foram inseridos no MongoDB. Processo pode ser feito usando um JS `db.getCollection("tasks").find({})`.
 
-#### 8. Listando as tasks (Read do CRUD):
+#### 8. Listando as tasks
+
 - Criar o bloco de `listTask` dentro do arquivo `main.go`.
 - Inserir tratamento de exceção para verificar a conexão com o banco de dados.
 - Inserir o router para `listTask`. 
 - No Postman teste utilizando uma requisição `GET: http://localhost:8000/tasks` para listar todas as tasks.
 - Verificar se retorna a lista de tasks adicionadas.
 
-#### 9. Atualizando as tasks (Update do CRUD):
+#### 9. Atualizando as tasks
+
 - Implementar o código com a função 
 - Criar uma request no Postman `PUT `
 - Inserir o `Body > Raw > JSON`:
@@ -169,7 +176,8 @@ Checar Docker version com comando `docker --version`.
 - Verificar no Studio3T se os dados foram atualizados do MongoDB. 
 - Processo pode ser feito usando um JS `db.getCollection("tasks").find({})`.
 
-#### 10. Deletando task (Delete do CRUD):
+#### 10. Deletando task
+
 - Inserir em `main.go` a função para apagar a task.
 - Inserir o router de apagar task.
 - No Postman criar um requet `DELETE: http://localhost:8000/task/<<ID>>` para deletar a task.
@@ -184,7 +192,8 @@ Checar Docker version com comando `docker --version`.
 - Após a finalização do CRUD popule  Tasks com os JS [populando-tasks.js](/go-crud-api/populando-tasks.js) ou [inserir-task.js](/go-crud-api/inserir-task.js). 
 - Basta inserir os dados no MongoDB e checar com comando `db.getCollection("tasks").find({})` ou `db.tasks.find().pretty()`.
 
-#### 11. Adicionando Swagger na aplicação:
+#### 11. Adicionando Swagger na aplicação
+
 - Essa parte é para documentar a API é feita através da instalação de pacotes.
 - Acesse o terminal na pasta do projeto `cd go-crud-api`.
 - Instale os pacotes via terminal: 
@@ -264,7 +273,7 @@ Checar Docker version com comando `docker --version`.
 
 ---
 
-##### Contribuidores:
+##### Contribuidores
 
 <!-- Link to generate contributors: https://hub-io-mcells-projects.vercel.app/ --->
 <table>
